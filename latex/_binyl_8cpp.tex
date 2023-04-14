@@ -1,0 +1,116 @@
+\hypertarget{_binyl_8cpp}{}\doxysection{Binyl.\+cpp File Reference}
+\label{_binyl_8cpp}\index{Binyl.cpp@{Binyl.cpp}}
+
+
+The main program.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Spotify\+Service.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}RFIDModule/\+RFIDModule.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}GUI.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Feedback\+Sound.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Graphics\+Display.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}User.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Song.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Queue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}json.\+hpp\char`\"{}}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_binyl_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}\label{_binyl_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}} 
+using {\bfseries json} = nlohmann\+::json
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_binyl_8cpp_a384b8392c92b1ee938d1debae63fe0c9}{gui\+Thread\+Function}} (\mbox{\hyperlink{class_g_u_i}{GUI}} $\ast$gui)
+\begin{DoxyCompactList}\small\item\em Begins running the \mbox{\hyperlink{class_g_u_i}{GUI}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_binyl_8cpp_a33495298e093e7f27a4e859630a65b08}{rfid\+Thread\+Function}} (\mbox{\hyperlink{class_g_u_i}{GUI}} $\ast$gui)
+\begin{DoxyCompactList}\small\item\em Begins reading from the RFID reader and sends commands to the Spotify API. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_binyl_8cpp_ad34dfcbb51834617a75e536dac91f843}{process\+Song\+Thread\+Function}} (\mbox{\hyperlink{class_g_u_i}{GUI}} $\ast$gui)
+\begin{DoxyCompactList}\small\item\em Begins processing songs in the queue to be played. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_binyl_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Entry point for the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main program. 
+
+Interfaces with all the classes. \begin{DoxyAuthor}{Author}
+Brandon Luu
+\end{DoxyAuthor}
+Binyl\+: Spotify RFID Music Player Tap a Binyl card to add songs, change playback, and more!
+
+Authors\+: Brandon Luu, Irfan Rahul Sharif, Armin Farhang-\/\+Pour, Ryan Cook, Endreas Yohannes
+
+Visit this site and login to get a new code. Copy the \textquotesingle{}code\textquotesingle{} value within the URL and run the program using\+: ./program \mbox{[}code\mbox{]} ./program \mbox{[}access token\mbox{]} 1
+
+\href{https://accounts.spotify.com/authorize?response_type=code&scope=user-read-playback-state}{\texttt{ https\+://accounts.\+spotify.\+com/authorize?response\+\_\+type=code\&scope=user-\/read-\/playback-\/state}} user-\/modify-\/playback-\/state\&client\+\_\+id=8692d0967e7d4bd4bf898c2c98b9e64b\&redirect\+\_\+uri=\href{https://www.blank.org/}{\texttt{ https\+://www.\+blank.\+org/}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_binyl_8cpp_a384b8392c92b1ee938d1debae63fe0c9}\label{_binyl_8cpp_a384b8392c92b1ee938d1debae63fe0c9}} 
+\index{Binyl.cpp@{Binyl.cpp}!guiThreadFunction@{guiThreadFunction}}
+\index{guiThreadFunction@{guiThreadFunction}!Binyl.cpp@{Binyl.cpp}}
+\doxysubsubsection{\texorpdfstring{guiThreadFunction()}{guiThreadFunction()}}
+{\footnotesize\ttfamily void gui\+Thread\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_g_u_i}{GUI}} $\ast$}]{gui }\end{DoxyParamCaption})}
+
+
+
+Begins running the \mbox{\hyperlink{class_g_u_i}{GUI}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui} & The \mbox{\hyperlink{class_g_u_i}{GUI}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_binyl_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{_binyl_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{Binyl.cpp@{Binyl.cpp}!main@{main}}
+\index{main@{main}!Binyl.cpp@{Binyl.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Entry point for the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Argument count. \\
+\hline
+{\em argv} & Should contain the Spotify token obtained from the authorization URL as the first argument. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_binyl_8cpp_ad34dfcbb51834617a75e536dac91f843}\label{_binyl_8cpp_ad34dfcbb51834617a75e536dac91f843}} 
+\index{Binyl.cpp@{Binyl.cpp}!processSongThreadFunction@{processSongThreadFunction}}
+\index{processSongThreadFunction@{processSongThreadFunction}!Binyl.cpp@{Binyl.cpp}}
+\doxysubsubsection{\texorpdfstring{processSongThreadFunction()}{processSongThreadFunction()}}
+{\footnotesize\ttfamily void process\+Song\+Thread\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_g_u_i}{GUI}} $\ast$}]{gui }\end{DoxyParamCaption})}
+
+
+
+Begins processing songs in the queue to be played. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui} & The \mbox{\hyperlink{class_g_u_i}{GUI}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_binyl_8cpp_a33495298e093e7f27a4e859630a65b08}\label{_binyl_8cpp_a33495298e093e7f27a4e859630a65b08}} 
+\index{Binyl.cpp@{Binyl.cpp}!rfidThreadFunction@{rfidThreadFunction}}
+\index{rfidThreadFunction@{rfidThreadFunction}!Binyl.cpp@{Binyl.cpp}}
+\doxysubsubsection{\texorpdfstring{rfidThreadFunction()}{rfidThreadFunction()}}
+{\footnotesize\ttfamily void rfid\+Thread\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_g_u_i}{GUI}} $\ast$}]{gui }\end{DoxyParamCaption})}
+
+
+
+Begins reading from the RFID reader and sends commands to the Spotify API. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui} & The \mbox{\hyperlink{class_g_u_i}{GUI}} object. \\
+\hline
+\end{DoxyParams}

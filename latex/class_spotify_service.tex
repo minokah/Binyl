@@ -1,0 +1,210 @@
+\hypertarget{class_spotify_service}{}\doxysection{Spotify\+Service Class Reference}
+\label{class_spotify_service}\index{SpotifyService@{SpotifyService}}
+
+
+Provides functions to interface with the Spotify API.  
+
+
+
+
+{\ttfamily \#include $<$Spotify\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spotify_service_a7ca596e0de22b9cf11a0bed03a304720}{init}} (std\+::string \mbox{\hyperlink{class_spotify_service_aaa34c81eea78176f78fce5110f0ab6ca}{code}}, int \mbox{\hyperlink{class_spotify_service_a38bd6b988644ab21385757b5637ebe73}{access}})
+\begin{DoxyCompactList}\small\item\em Initializes the Spotify API service. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_spotify_service_a0780e8c28b6c4e7c6ad146e29491f84f}{get\+Playing}} ()
+\begin{DoxyCompactList}\small\item\em Gets infomration about the currently playing song. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_spotify_service_a406a4de4746bd7b38c5bd3a7fa6cdee4}{get\+Song}} (std\+::string id)
+\begin{DoxyCompactList}\small\item\em Gets infomration about a song. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_spotify_service_ab54fef36dc46a5cf903a075bb678841d}{get\+Playlist}} (std\+::string id, int offset)
+\begin{DoxyCompactList}\small\item\em Gets infomration about a playlist. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_spotify_service_a5fc074ebe3aaef72c2742159214be02b}{get\+Album}} (std\+::string id, int offset)
+\begin{DoxyCompactList}\small\item\em Gets infomration about an album. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spotify_service_a01c2f3ac56fe4da7a21bd8582645ac86}{set\+Volume}} (int volume)
+\begin{DoxyCompactList}\small\item\em Sets the volume of the active device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spotify_service_a02b5f01d44bfe0d9ad6677bb3912f11b}\label{class_spotify_service_a02b5f01d44bfe0d9ad6677bb3912f11b}} 
+void {\bfseries play} ()
+\begin{DoxyCompactList}\small\item\em Begin playback of the active device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spotify_service_a955c9542620690283aad1dbc025632d6}\label{class_spotify_service_a955c9542620690283aad1dbc025632d6}} 
+void {\bfseries pause} ()
+\begin{DoxyCompactList}\small\item\em Pause playback of the active device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spotify_service_a683ec5ac27778caf850f000f9f6c3396}\label{class_spotify_service_a683ec5ac27778caf850f000f9f6c3396}} 
+void {\bfseries skip\+Next} ()
+\begin{DoxyCompactList}\small\item\em Skip to the next song in the Spotify queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spotify_service_a3c9562784690c3fa3776964a3d34cadb}\label{class_spotify_service_a3c9562784690c3fa3776964a3d34cadb}} 
+void {\bfseries skip\+Previous} ()
+\begin{DoxyCompactList}\small\item\em Skip to the previous song in the Spotify queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spotify_service_a2fc0450443a0836d830a4430eb9006fa}{queue}} (std\+::string url)
+\begin{DoxyCompactList}\small\item\em Add a song to the Spotify queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}} \& \mbox{\hyperlink{class_spotify_service_a6b3a4c9caffbb914d9d8eaef900acdd3}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Method to initialize and return a single \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_spotify_service_a54291e8c74221f6f33ebe132661d2b80}\label{class_spotify_service_a54291e8c74221f6f33ebe132661d2b80}} 
+{\bfseries Spotify\+Service} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor for an instance of \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spotify_service_a087e9539891e0184e80732ccb710b62e}\label{class_spotify_service_a087e9539891e0184e80732ccb710b62e}} 
+{\bfseries Spotify\+Service} (std\+::string \mbox{\hyperlink{class_spotify_service_aaa34c81eea78176f78fce5110f0ab6ca}{code}}, int \mbox{\hyperlink{class_spotify_service_a38bd6b988644ab21385757b5637ebe73}{access}}=0)
+\begin{DoxyCompactList}\small\item\em Constructor for an instance of \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spotify_service_a5b4735e53ab9d426701b9df230147344}\label{class_spotify_service_a5b4735e53ab9d426701b9df230147344}} 
+{\bfseries $\sim$\+Spotify\+Service} ()
+\begin{DoxyCompactList}\small\item\em Destructor for an instance of \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_spotify_service_aaa34c81eea78176f78fce5110f0ab6ca}\label{class_spotify_service_aaa34c81eea78176f78fce5110f0ab6ca}} 
+std\+::string {\bfseries code}
+\begin{DoxyCompactList}\small\item\em The Spotify access code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spotify_service_a38bd6b988644ab21385757b5637ebe73}\label{class_spotify_service_a38bd6b988644ab21385757b5637ebe73}} 
+int {\bfseries access}
+\begin{DoxyCompactList}\small\item\em Whether the access code has already been authenciated or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functions to interface with the Spotify API. 
+
+This header provides the \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}} class for sending requests to the Spotify API. \begin{DoxyAuthor}{Author}
+Brandon Luu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spotify_service_a5fc074ebe3aaef72c2742159214be02b}\label{class_spotify_service_a5fc074ebe3aaef72c2742159214be02b}} 
+\index{SpotifyService@{SpotifyService}!getAlbum@{getAlbum}}
+\index{getAlbum@{getAlbum}!SpotifyService@{SpotifyService}}
+\doxysubsubsection{\texorpdfstring{getAlbum()}{getAlbum()}}
+{\footnotesize\ttfamily string Spotify\+Service\+::get\+Album (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+
+
+Gets infomration about an album. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The Spotify ID of the album (ex. The text after \char`\"{}album\+:\char`\"{} in spotify\+:album\+:2iv\+NJLSx8\+Rbvnsvcn01\+Yt3). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the JSON information about an album. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spotify_service_a6b3a4c9caffbb914d9d8eaef900acdd3}\label{class_spotify_service_a6b3a4c9caffbb914d9d8eaef900acdd3}} 
+\index{SpotifyService@{SpotifyService}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!SpotifyService@{SpotifyService}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}} \& Spotify\+Service\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to initialize and return a single \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}} instance. 
+
+\begin{DoxyReturn}{Returns}
+Returns the \mbox{\hyperlink{class_spotify_service}{Spotify\+Service}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spotify_service_a0780e8c28b6c4e7c6ad146e29491f84f}\label{class_spotify_service_a0780e8c28b6c4e7c6ad146e29491f84f}} 
+\index{SpotifyService@{SpotifyService}!getPlaying@{getPlaying}}
+\index{getPlaying@{getPlaying}!SpotifyService@{SpotifyService}}
+\doxysubsubsection{\texorpdfstring{getPlaying()}{getPlaying()}}
+{\footnotesize\ttfamily string Spotify\+Service\+::get\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets infomration about the currently playing song. 
+
+\begin{DoxyReturn}{Returns}
+Returns the JSON information about the currently playing song. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spotify_service_ab54fef36dc46a5cf903a075bb678841d}\label{class_spotify_service_ab54fef36dc46a5cf903a075bb678841d}} 
+\index{SpotifyService@{SpotifyService}!getPlaylist@{getPlaylist}}
+\index{getPlaylist@{getPlaylist}!SpotifyService@{SpotifyService}}
+\doxysubsubsection{\texorpdfstring{getPlaylist()}{getPlaylist()}}
+{\footnotesize\ttfamily string Spotify\+Service\+::get\+Playlist (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+
+
+Gets infomration about a playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The Spotify ID of the playlist (ex. The text after \char`\"{}playlist\+:\char`\"{} in spotify\+:playlist\+:28Iy9h5\+Xzax5d\+Vbwmrg\+Pxa). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the JSON information about a playlist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spotify_service_a406a4de4746bd7b38c5bd3a7fa6cdee4}\label{class_spotify_service_a406a4de4746bd7b38c5bd3a7fa6cdee4}} 
+\index{SpotifyService@{SpotifyService}!getSong@{getSong}}
+\index{getSong@{getSong}!SpotifyService@{SpotifyService}}
+\doxysubsubsection{\texorpdfstring{getSong()}{getSong()}}
+{\footnotesize\ttfamily string Spotify\+Service\+::get\+Song (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets infomration about a song. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The Spotify ID of the song (ex. The text after \char`\"{}track\+:\char`\"{} in spotify\+:track\+:57fqm\+Daokbx\+Z3\+Ta\+B0jp39q). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the JSON information about a song. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spotify_service_a7ca596e0de22b9cf11a0bed03a304720}\label{class_spotify_service_a7ca596e0de22b9cf11a0bed03a304720}} 
+\index{SpotifyService@{SpotifyService}!init@{init}}
+\index{init@{init}!SpotifyService@{SpotifyService}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Spotify\+Service\+::init (\begin{DoxyParamCaption}\item[{std\+::string}]{code,  }\item[{int}]{access }\end{DoxyParamCaption})}
+
+
+
+Initializes the Spotify API service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The Spotify authorization token. \\
+\hline
+{\em access} & Whether the auth token is already authorized (your code is actually an access token) or not. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spotify_service_a2fc0450443a0836d830a4430eb9006fa}\label{class_spotify_service_a2fc0450443a0836d830a4430eb9006fa}} 
+\index{SpotifyService@{SpotifyService}!queue@{queue}}
+\index{queue@{queue}!SpotifyService@{SpotifyService}}
+\doxysubsubsection{\texorpdfstring{queue()}{queue()}}
+{\footnotesize\ttfamily void Spotify\+Service\+::queue (\begin{DoxyParamCaption}\item[{std\+::string}]{url }\end{DoxyParamCaption})}
+
+
+
+Add a song to the Spotify queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The Spotify song\textquotesingle{}s URL (ex. 57fqm\+Daokbx\+Z3\+Ta\+B0jp39q). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spotify_service_a01c2f3ac56fe4da7a21bd8582645ac86}\label{class_spotify_service_a01c2f3ac56fe4da7a21bd8582645ac86}} 
+\index{SpotifyService@{SpotifyService}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!SpotifyService@{SpotifyService}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily void Spotify\+Service\+::set\+Volume (\begin{DoxyParamCaption}\item[{int}]{volume }\end{DoxyParamCaption})}
+
+
+
+Sets the volume of the active device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume (from 0 to 100). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Spotify\+Service.\+h\item 
+Spotify\+Service.\+cpp\end{DoxyCompactItemize}

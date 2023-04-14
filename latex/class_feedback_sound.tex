@@ -1,0 +1,127 @@
+\hypertarget{class_feedback_sound}{}\doxysection{Feedback\+Sound Class Reference}
+\label{class_feedback_sound}\index{FeedbackSound@{FeedbackSound}}
+
+
+Play feedback sounds upon an action.  
+
+
+
+
+{\ttfamily \#include $<$Feedback\+Sound.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_feedback_sound_a73d80c8de1de04b7407a38c9dd41dcd4}\label{class_feedback_sound_a73d80c8de1de04b7407a38c9dd41dcd4}} 
+void {\bfseries queueadd\+\_\+sound} ()
+\begin{DoxyCompactList}\small\item\em Play the \char`\"{}added to queue\char`\"{} sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_a971f672a13e886887bf30a444a534bcf}\label{class_feedback_sound_a971f672a13e886887bf30a444a534bcf}} 
+void {\bfseries playpause\+\_\+sound} ()
+\begin{DoxyCompactList}\small\item\em Play the \char`\"{}play\char`\"{} or \char`\"{}pause\char`\"{} sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_a972d4d173fb5adc9a601dab578359852}\label{class_feedback_sound_a972d4d173fb5adc9a601dab578359852}} 
+void {\bfseries skipnext\+\_\+sound} ()
+\begin{DoxyCompactList}\small\item\em Play the \char`\"{}skip next\char`\"{} sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_a87c3ae9305db0988e2b8c0a641dc2298}\label{class_feedback_sound_a87c3ae9305db0988e2b8c0a641dc2298}} 
+void {\bfseries queuemode\+\_\+sound} ()
+\begin{DoxyCompactList}\small\item\em Play the \char`\"{}queue mode toggle\char`\"{} sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_adac5052c2df0e869c9c7de8db4f67f51}\label{class_feedback_sound_adac5052c2df0e869c9c7de8db4f67f51}} 
+void {\bfseries volume\+\_\+sound} ()
+\begin{DoxyCompactList}\small\item\em Play the \char`\"{}volume adjust\char`\"{} sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_acce59010524c4819d4671a7aabd703df}\label{class_feedback_sound_acce59010524c4819d4671a7aabd703df}} 
+void {\bfseries shuffle\+\_\+sound} ()
+\begin{DoxyCompactList}\small\item\em Play the \char`\"{}shuffle\char`\"{} sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_a2de8dadc1517cad9ec528ec68b8f1bd0}\label{class_feedback_sound_a2de8dadc1517cad9ec528ec68b8f1bd0}} 
+void {\bfseries invalid\+\_\+sound} ()
+\begin{DoxyCompactList}\small\item\em Play the \char`\"{}invlaid\char`\"{} sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_a5a9093f130d575e346efc879b1a22c60}\label{class_feedback_sound_a5a9093f130d575e346efc879b1a22c60}} 
+void {\bfseries clear\+\_\+sound} ()
+\begin{DoxyCompactList}\small\item\em Play the \char`\"{}clear queue\char`\"{} sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_af669f0933b23aad10ed6771e65741042}\label{class_feedback_sound_af669f0933b23aad10ed6771e65741042}} 
+{\bfseries Feedback\+Sound} (const \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Delete the copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_a12fe1290da5f94aa91ee5a471dc3a036}\label{class_feedback_sound_a12fe1290da5f94aa91ee5a471dc3a036}} 
+\mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Delete the assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} \& \mbox{\hyperlink{class_feedback_sound_a3656e81138e20248d05d7d7acda371b5}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Method to initialize and return a single \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_feedback_sound_a19759bc860c19cdf8fefa34b360a4a5a}{play\+Sound}} (sf\+::\+Sound\+Buffer $\ast$\mbox{\hyperlink{class_feedback_sound_adc06a26aef285df6fc250fd157c48f93}{buffer}})
+\begin{DoxyCompactList}\small\item\em Play the sound. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_feedback_sound_a0b1297a7993bbfb4375d71d00c17f1fc}{Feedback\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for an instsance of \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_feedback_sound_af019058a5fba5538de88f03d727becc2}\label{class_feedback_sound_af019058a5fba5538de88f03d727becc2}} 
+{\bfseries $\sim$\+Feedback\+Sound} ()
+\begin{DoxyCompactList}\small\item\em Destructor for an instance of \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_feedback_sound_adc06a26aef285df6fc250fd157c48f93}\label{class_feedback_sound_adc06a26aef285df6fc250fd157c48f93}} 
+sf\+::\+Sound\+Buffer {\bfseries buffer}
+\begin{DoxyCompactList}\small\item\em Sound buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Play feedback sounds upon an action. 
+
+This header provides the \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} class for playing a sound upon some action. \begin{DoxyAuthor}{Author}
+Irfan Rahul Sharif 
+
+Brandon Luu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_feedback_sound_a0b1297a7993bbfb4375d71d00c17f1fc}\label{class_feedback_sound_a0b1297a7993bbfb4375d71d00c17f1fc}} 
+\index{FeedbackSound@{FeedbackSound}!FeedbackSound@{FeedbackSound}}
+\index{FeedbackSound@{FeedbackSound}!FeedbackSound@{FeedbackSound}}
+\doxysubsubsection{\texorpdfstring{FeedbackSound()}{FeedbackSound()}}
+{\footnotesize\ttfamily Feedback\+Sound\+::\+Feedback\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Constructor for an instsance of \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}}. 
+
+Play feedback sounds upon an action.
+
+This file implements the \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} class for playing a sound upon some action. \begin{DoxyAuthor}{Author}
+Irfan Rahul Sharif 
+
+Brandon Luu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_feedback_sound_a3656e81138e20248d05d7d7acda371b5}\label{class_feedback_sound_a3656e81138e20248d05d7d7acda371b5}} 
+\index{FeedbackSound@{FeedbackSound}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!FeedbackSound@{FeedbackSound}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} \& Feedback\+Sound\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to initialize and return a single \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} instance. 
+
+\begin{DoxyReturn}{Returns}
+Returns the \mbox{\hyperlink{class_feedback_sound}{Feedback\+Sound}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_feedback_sound_a19759bc860c19cdf8fefa34b360a4a5a}\label{class_feedback_sound_a19759bc860c19cdf8fefa34b360a4a5a}} 
+\index{FeedbackSound@{FeedbackSound}!playSound@{playSound}}
+\index{playSound@{playSound}!FeedbackSound@{FeedbackSound}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void Feedback\+Sound\+::play\+Sound (\begin{DoxyParamCaption}\item[{sf\+::\+Sound\+Buffer $\ast$}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Play the sound. 
+
+The sound buffer to be played. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Feedback\+Sound.\+h\item 
+Feedback\+Sound.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{_spotify_web_request_8h_source}{}\doxysection{Spotify\+Web\+Request.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ SPOTIFYWEBREQUEST\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ SPOTIFYWEBREQUEST\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <curl/curl.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_spotify_web_request}{SpotifyWebRequest}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_spotify_web_request_1_1_memory_struct}{MemoryStruct}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ *memory;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ size\ =\ 0;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ libcurl\ stuff}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_spotify_web_request_1_1_memory_struct}{MemoryStruct}}\ data;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_spotify_web_request_1_1_memory_struct}{MemoryStruct}}\ readData;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ CURL\ *curl\_handle;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ CURLcode\ res;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }curl\_slist\ *headerList\ =\ NULL;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{class_spotify_web_request_afa32e77b3e8c85e4a7c0655e9c5d8eeb}{client}}\ =\ \textcolor{stringliteral}{"{}ODY5MmQwOTY3ZTdkNGJkNGJmODk4YzJjOThiOWU2NGI6ZDM2YjBlYWIxNjdiNDE2OThlNjM3YWY3ZDZmNTllZDA="{}};\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{class_spotify_web_request_a6b6239be10fcb43de269fa2aa3f08df7}{clientID}}\ =\ \textcolor{stringliteral}{"{}8692d0967e7d4bd4bf898c2c98b9e64b"{}};\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{class_spotify_web_request_ac9baec09e94d84c73bcdc5c2bee466b0}{clientSecret}}\ =\ \textcolor{stringliteral}{"{}d36b0eab167b41698e637af7d6f59ed0"{}};\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_spotify_web_request_a59551bc781daa6facbcf1c0463adf3b6}{access\_token}};\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_spotify_web_request_a741f7c47eb0c1eaa41e1d30ca5bc6f39}{refresh\_token}};\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_spotify_web_request_a56fa03c1ece5422789cd5e4512d52a2c}{WriteMemoryCallback}}(\textcolor{keywordtype}{void}\ *contents,\ \textcolor{keywordtype}{size\_t}\ size,\ \textcolor{keywordtype}{size\_t}\ nmemb,\ \textcolor{keywordtype}{void}\ *userp);}
+\DoxyCodeLine{00039\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_spotify_web_request}{SpotifyWebRequest}}(std::string\ code,\ \textcolor{keywordtype}{int}\ access);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_spotify_web_request_a234b0c177e0e83edb6e84f3f458be2f3}{\string~SpotifyWebRequest}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_spotify_web_request_a351a7ca9868b13f42e5d94b474384d9a}{execute}}(std::string\ url,\ \textcolor{keywordtype}{int}\ type);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_spotify_web_request_a679e9e34a4c19e720250dad73e7fd841}{result}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_spotify_web_request_a1e48ae5caf62d1574840d5f357b756fd}{getAccessToken}}();}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Type\ of\ request}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ This\ can\ be\ an\ enum\ instead,\ but\ this\ works.}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ req\_GET\ =\ 0;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ req\_POST\ =\ 1;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ req\_PUT\ =\ 2;}
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

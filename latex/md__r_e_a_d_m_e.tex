@@ -1,0 +1,43 @@
+Vinyls digitized for Raspberry Pi.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{Authors}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Brandon Luu
+\item Armin Farhang
+\item Irfan Sharif
+\item Ryan Cook
+\item Endreas Yohannes
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{Introduction}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item This is a program written in C++ for the Raspberry Pi that is meant to vinyl-\/like funcitonality with tap cards.
+\item The program uses Spotify\textquotesingle{}s API to store and play songs, with URLs being loaded onto RFID cards.
+\item To play a song, we tap the corresponding card onto an RFID module attached to a Raspberry Pi while running the program.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{Current Features}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Functional \mbox{\hyperlink{class_g_u_i}{GUI}}
+\item All queued songs will play as expected
+\item Cards loaded with a single song ID will be queued
+\item Cards loaded with a playlist or album ID will have all its songs queued
+\item Songs that are up next will are displayed on the \mbox{\hyperlink{class_g_u_i}{GUI}}
+\item Users can play, pause, and skip to the next song
+\item Users can add an identifier (ie. name) onto the card and the \mbox{\hyperlink{class_g_u_i}{GUI}} will display who queued which card
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{Dependencies}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item RFID-\/\+RC522 -\/ A library for RFID support on Raspberry Pi \mbox{[}\href{https://github.com/paulvha/rfid-rc522}{\texttt{ https\+://github.\+com/paulvha/rfid-\/rc522}}\mbox{]}
+\item BCM2835 -\/ A library for Broadcom BCM 2835 chip support on Raspberry Pi \mbox{[}\href{https://www.airspayce.com/mikem/bcm2835}{\texttt{ https\+://www.\+airspayce.\+com/mikem/bcm2835}}\mbox{]}
+\item SFML -\/ Multimedia for C++ \mbox{[}\href{https://www.sfml-dev.org}{\texttt{ https\+://www.\+sfml-\/dev.\+org}}\mbox{]}
+\item libssd1306 -\/ A driver for OLED SSD1306 \mbox{[}\href{https://github.com/stealthylabs/libssd1306}{\texttt{ https\+://github.\+com/stealthylabs/libssd1306}}\mbox{]}
+\item curl -\/ For HTTP requests \mbox{[}\href{https://curl.se}{\texttt{ https\+://curl.\+se}}\mbox{]}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Building}\label{md__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Install all the above Dependencies
+\item Run the makefile 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ all}
+
+\end{DoxyCode}
+ 
+\end{DoxyItemize}

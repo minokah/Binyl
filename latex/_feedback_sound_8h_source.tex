@@ -1,0 +1,45 @@
+\hypertarget{_feedback_sound_8h_source}{}\doxysection{Feedback\+Sound.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FEEDBACK\_SOUND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FEEDBACK\_SOUND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Audio.hpp>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_feedback_sound}{FeedbackSound}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ sf::SoundBuffer\ \mbox{\hyperlink{class_feedback_sound_adc06a26aef285df6fc250fd157c48f93}{buffer}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_a19759bc860c19cdf8fefa34b360a4a5a}{playSound}}(sf::SoundBuffer*\ \mbox{\hyperlink{class_feedback_sound_adc06a26aef285df6fc250fd157c48f93}{buffer}});}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_feedback_sound_a0b1297a7993bbfb4375d71d00c17f1fc}{FeedbackSound}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_feedback_sound_af019058a5fba5538de88f03d727becc2}{\string~FeedbackSound}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_feedback_sound}{FeedbackSound}}\&\ \mbox{\hyperlink{class_feedback_sound_a3656e81138e20248d05d7d7acda371b5}{getInstance}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_a73d80c8de1de04b7407a38c9dd41dcd4}{queueadd\_sound}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_a971f672a13e886887bf30a444a534bcf}{playpause\_sound}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_a972d4d173fb5adc9a601dab578359852}{skipnext\_sound}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_a87c3ae9305db0988e2b8c0a641dc2298}{queuemode\_sound}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_adac5052c2df0e869c9c7de8db4f67f51}{volume\_sound}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_acce59010524c4819d4671a7aabd703df}{shuffle\_sound}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_a2de8dadc1517cad9ec528ec68b8f1bd0}{invalid\_sound}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_feedback_sound_a5a9093f130d575e346efc879b1a22c60}{clear\_sound}}();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_feedback_sound_af669f0933b23aad10ed6771e65741042}{FeedbackSound}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_feedback_sound}{FeedbackSound}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_feedback_sound}{FeedbackSound}}\&\ \mbox{\hyperlink{class_feedback_sound_a12fe1290da5f94aa91ee5a471dc3a036}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_feedback_sound}{FeedbackSound}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,408 @@
+\hypertarget{class_g_u_i}{}\doxysection{GUI Class Reference}
+\label{class_g_u_i}\index{GUI@{GUI}}
+
+
+Visual \mbox{\hyperlink{class_g_u_i}{GUI}} built using SFML.  
+
+
+
+
+{\ttfamily \#include $<$GUI.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_u_i_a4ba9064e3c25e144b9dd5d10585d3859}{GUI}} (int width, int height, const std\+::string \&title, const std\+::string \&style)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_g_u_i}{GUI}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a659488f37d58f096d82affaf10f00a14}{set\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Method to set the window to empty (i.\+e. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_abd799936cf302441ead0fd9bade306be}{set\+Current\+Song}} (\mbox{\hyperlink{class_song}{Song}} newsong)
+\begin{DoxyCompactList}\small\item\em Method to set the current song given a \mbox{\hyperlink{class_song}{Song}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_ab1423229acd8493978dac79bda1ba9ab}{set\+Current\+Song}} (std\+::string newartist, std\+::string newsong, std\+::string newalbum, std\+::string coverlink)
+\begin{DoxyCompactList}\small\item\em Method to set the current song given a list of attributes for drawing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_ababac8ba8567962a32da7a829a58d7c0}{set\+Next\+Four}} (std\+::vector$<$ \mbox{\hyperlink{class_song}{Song}} $>$ next4, int queuesize)
+\begin{DoxyCompactList}\small\item\em Method to set the next 4 upcoming songs to be played. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_ab8493bb3db44af17109c5a93fe26ce1e}{set\+Next}} (std\+::string newartist, std\+::string newsong, std\+::string username, int numnext)
+\begin{DoxyCompactList}\small\item\em Method to set the next upcoming song to be played given a list of attributes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_ad0f07a40eca6767623983b41a58ed00b}{set\+Next}} (\mbox{\hyperlink{class_song}{Song}} song, int numnext)
+\begin{DoxyCompactList}\small\item\em Method to insert a song in the GUIs upcoming songs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_ae8b2fcd1ea7ab5f2cd994a1b65059d64}{change\+Element}} (sf\+::\+Sprite \&background, sf\+::\+Texture \&texture, const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Method to change an element in the \mbox{\hyperlink{class_g_u_i}{GUI}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_aca82e73dd4e30a729eff6f903b5f782a}\label{class_g_u_i_aca82e73dd4e30a729eff6f903b5f782a}} 
+void {\bfseries set\+Pause\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Method to set the screen to paused. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a092624337f93bf8ccc013dc806dcb986}\label{class_g_u_i_a092624337f93bf8ccc013dc806dcb986}} 
+void {\bfseries set\+Play\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Method to set the screen to playing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_adfce22b531c88fa6baad2e5152af1a82}\label{class_g_u_i_adfce22b531c88fa6baad2e5152af1a82}} 
+void {\bfseries flash\+Next\+Logo} ()
+\begin{DoxyCompactList}\small\item\em Method to flash the next button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a8dfb17d70487248cefbb2072c4496866}\label{class_g_u_i_a8dfb17d70487248cefbb2072c4496866}} 
+void {\bfseries flash\+Prev\+Logo} ()
+\begin{DoxyCompactList}\small\item\em Method to flash the previous button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a26860219298c2e163c5c0315de72dc2b}\label{class_g_u_i_a26860219298c2e163c5c0315de72dc2b}} 
+void {\bfseries run\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Method to initialize and run the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a1be154b5999e801900f12844d846b57e}\label{class_g_u_i_a1be154b5999e801900f12844d846b57e}} 
+void {\bfseries set\+Queue\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Method to display the \char`\"{}queue mode\char`\"{} state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a5f10693804a758493a77d1513610f3f4}\label{class_g_u_i_a5f10693804a758493a77d1513610f3f4}} 
+void {\bfseries remove\+Queue\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Method to hide the \char`\"{}queue mode\char`\"{} state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a1cedb1ce1a9fdf1b4fa3ac5cae2ced5f}{flash\+Card}} (\mbox{\hyperlink{class_song}{Song}} song, std\+::string type)
+\begin{DoxyCompactList}\small\item\em Method to show the card that was tapped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_g_u_i_aed6fae4a1231c2fcd8b2b3a09fc63387}\label{class_g_u_i_aed6fae4a1231c2fcd8b2b3a09fc63387}} 
+std\+::string {\bfseries trunc\+String} (std\+::string string, int numchar)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a07886691ae3f09e4ec34b780d50b232a}\label{class_g_u_i_a07886691ae3f09e4ec34b780d50b232a}} 
+sf\+::\+Render\+Window {\bfseries window}
+\begin{DoxyCompactList}\small\item\em A window instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a707d9329bdda1bccf1608cdeaa263d20}\label{class_g_u_i_a707d9329bdda1bccf1608cdeaa263d20}} 
+sf\+::\+Texture {\bfseries cover}
+\begin{DoxyCompactList}\small\item\em Textures for assets used in the \mbox{\hyperlink{class_g_u_i}{GUI}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a4d2976e292cb59784b9fc2eee62f367d}\label{class_g_u_i_a4d2976e292cb59784b9fc2eee62f367d}} 
+sf\+::\+Texture {\bfseries bckgrnd}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a70ad09b37d936fbdcdfbaabd4c1d4f53}\label{class_g_u_i_a70ad09b37d936fbdcdfbaabd4c1d4f53}} 
+sf\+::\+Texture {\bfseries pause\+\_\+bckgrnd}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a6b1e22fbd93829b4b1ceebc6d3338376}\label{class_g_u_i_a6b1e22fbd93829b4b1ceebc6d3338376}} 
+sf\+::\+Texture {\bfseries next}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a14dad7bad189465191d88b06d20d4d4e}\label{class_g_u_i_a14dad7bad189465191d88b06d20d4d4e}} 
+sf\+::\+Texture {\bfseries prev}
+\item 
+\mbox{\Hypertarget{class_g_u_i_adb0f2c0962e1cf0144cdc0307596040f}\label{class_g_u_i_adb0f2c0962e1cf0144cdc0307596040f}} 
+sf\+::\+Texture {\bfseries pause}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a1214503b803ae00339e7ab93ba95ecb1}\label{class_g_u_i_a1214503b803ae00339e7ab93ba95ecb1}} 
+sf\+::\+Texture {\bfseries play}
+\item 
+\mbox{\Hypertarget{class_g_u_i_adbed2de9cedf4394b8cdc68d8111d6e2}\label{class_g_u_i_adbed2de9cedf4394b8cdc68d8111d6e2}} 
+sf\+::\+Texture {\bfseries queue}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a73fd5cfe0e4c16a19311a7ffd22146a9}\label{class_g_u_i_a73fd5cfe0e4c16a19311a7ffd22146a9}} 
+sf\+::\+Texture {\bfseries quecard}
+\item 
+\mbox{\Hypertarget{class_g_u_i_ae41a8063032554cb1b8fb62560096029}\label{class_g_u_i_ae41a8063032554cb1b8fb62560096029}} 
+sf\+::\+Texture {\bfseries quecover}
+\item 
+\mbox{\Hypertarget{class_g_u_i_ad7995b0413e688f871010c6cc5034323}\label{class_g_u_i_ad7995b0413e688f871010c6cc5034323}} 
+sf\+::\+Sprite {\bfseries coversprite}
+\begin{DoxyCompactList}\small\item\em Sprites for assets used in the \mbox{\hyperlink{class_g_u_i}{GUI}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_aca16edd2902ccfefc5917145c42b0f68}\label{class_g_u_i_aca16edd2902ccfefc5917145c42b0f68}} 
+sf\+::\+Sprite {\bfseries bckgrndsprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_ab612c93aa546bb200ed2aeca12bdb5c3}\label{class_g_u_i_ab612c93aa546bb200ed2aeca12bdb5c3}} 
+sf\+::\+Sprite {\bfseries pause\+\_\+bckgrndsprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_aa8ce517c16c9ce690404a35d472ab0dd}\label{class_g_u_i_aa8ce517c16c9ce690404a35d472ab0dd}} 
+sf\+::\+Sprite {\bfseries nextsprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a96e9db2b6e3ab46f5ed71ad30720b547}\label{class_g_u_i_a96e9db2b6e3ab46f5ed71ad30720b547}} 
+sf\+::\+Sprite {\bfseries prevsprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a1290c56460bf8a9ada7968320f7ccdd1}\label{class_g_u_i_a1290c56460bf8a9ada7968320f7ccdd1}} 
+sf\+::\+Sprite {\bfseries pausesprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a027d23cdda4dcd25744bce816e29e9d5}\label{class_g_u_i_a027d23cdda4dcd25744bce816e29e9d5}} 
+sf\+::\+Sprite {\bfseries playsprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a15fed8cd65375caffc38b80786c9a7a6}\label{class_g_u_i_a15fed8cd65375caffc38b80786c9a7a6}} 
+sf\+::\+Sprite {\bfseries queuesprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a9168919f0df1ef786115f863e5910bd1}\label{class_g_u_i_a9168919f0df1ef786115f863e5910bd1}} 
+sf\+::\+Sprite {\bfseries quecardsprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a353a901aa55c39f46f9215d19ba911ee}\label{class_g_u_i_a353a901aa55c39f46f9215d19ba911ee}} 
+sf\+::\+Sprite {\bfseries quecoversprite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a8e244adedd8223396d28cbbc6a0e4fd4}\label{class_g_u_i_a8e244adedd8223396d28cbbc6a0e4fd4}} 
+sf\+::\+Font {\bfseries Chak\+Reg}
+\begin{DoxyCompactList}\small\item\em Fonts used in our \mbox{\hyperlink{class_g_u_i}{GUI}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_af514e4a4e5efb34e5df35207c23f5a97}\label{class_g_u_i_af514e4a4e5efb34e5df35207c23f5a97}} 
+sf\+::\+Font {\bfseries chak\+Bold}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a01dc2ba64d935893225b212efb8a4bb7}\label{class_g_u_i_a01dc2ba64d935893225b212efb8a4bb7}} 
+sf\+::\+Font {\bfseries monst\+Font\+Ital}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a886a68cad8bc036eb1ddd1b95ae3413e}\label{class_g_u_i_a886a68cad8bc036eb1ddd1b95ae3413e}} 
+sf\+::\+Font {\bfseries monst\+Font\+Reg}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a6b6482367f7dbc213b2af1b79d07b45d}\label{class_g_u_i_a6b6482367f7dbc213b2af1b79d07b45d}} 
+sf\+::\+Color {\bfseries black}
+\begin{DoxyCompactList}\small\item\em Color palette used in our \mbox{\hyperlink{class_g_u_i}{GUI}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a48afc7bb62180e8c0049bc667110aafe}\label{class_g_u_i_a48afc7bb62180e8c0049bc667110aafe}} 
+sf\+::\+Color {\bfseries offwhite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a99d7cbc322a3508be329acb57fe0d62d}\label{class_g_u_i_a99d7cbc322a3508be329acb57fe0d62d}} 
+sf\+::\+Color {\bfseries greywhite}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a40863871dbcee26dae05c73057f28226}\label{class_g_u_i_a40863871dbcee26dae05c73057f28226}} 
+sf\+::\+Color {\bfseries opacitynone}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a7cc6c3edd7da336aae3369330fcf8510}\label{class_g_u_i_a7cc6c3edd7da336aae3369330fcf8510}} 
+sf\+::\+Color {\bfseries opacityfull}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a170bc2bfca27cfa30b0f686ec4c7671f}\label{class_g_u_i_a170bc2bfca27cfa30b0f686ec4c7671f}} 
+sf\+::\+Text {\bfseries artisttext}
+\begin{DoxyCompactList}\small\item\em Text interfaces used in our \mbox{\hyperlink{class_g_u_i}{GUI}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_ae637133bf5844d161970ebd6e5b9218a}\label{class_g_u_i_ae637133bf5844d161970ebd6e5b9218a}} 
+sf\+::\+Text {\bfseries albumtext}
+\item 
+\mbox{\Hypertarget{class_g_u_i_ab736565b34de34934330cd0ca384421b}\label{class_g_u_i_ab736565b34de34934330cd0ca384421b}} 
+sf\+::\+Text {\bfseries songtext}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a2a098de36ea52ff3683db9ee2e1848a4}\label{class_g_u_i_a2a098de36ea52ff3683db9ee2e1848a4}} 
+sf\+::\+Text {\bfseries next1text}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a9137d9f41a7df5320539fdb6de4d3704}\label{class_g_u_i_a9137d9f41a7df5320539fdb6de4d3704}} 
+sf\+::\+Text {\bfseries next2text}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a9a8fd6b67e4b67f79662290266cc9ab7}\label{class_g_u_i_a9a8fd6b67e4b67f79662290266cc9ab7}} 
+sf\+::\+Text {\bfseries next3text}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a01b98a67444105794ece09d083f4a493}\label{class_g_u_i_a01b98a67444105794ece09d083f4a493}} 
+sf\+::\+Text {\bfseries next4text}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a05943c123b344dea2f7a4cc5e8b9ec72}\label{class_g_u_i_a05943c123b344dea2f7a4cc5e8b9ec72}} 
+sf\+::\+Text {\bfseries next1usertext}
+\item 
+\mbox{\Hypertarget{class_g_u_i_ad2beb4d9975bdd9d33345068080c3f16}\label{class_g_u_i_ad2beb4d9975bdd9d33345068080c3f16}} 
+sf\+::\+Text {\bfseries next2usertext}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a3cdc6dc29545fb860f255d06994f39b2}\label{class_g_u_i_a3cdc6dc29545fb860f255d06994f39b2}} 
+sf\+::\+Text {\bfseries next3usertext}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a6b419410f27854252a464594de8407ae}\label{class_g_u_i_a6b419410f27854252a464594de8407ae}} 
+sf\+::\+Text {\bfseries next4usertext}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a131183f9e9b97ac1969deddd52950b6c}\label{class_g_u_i_a131183f9e9b97ac1969deddd52950b6c}} 
+sf\+::\+Text {\bfseries queuesizetext}
+\item 
+\mbox{\Hypertarget{class_g_u_i_abae470be662a86647646ed6b5741ca24}\label{class_g_u_i_abae470be662a86647646ed6b5741ca24}} 
+sf\+::\+Text {\bfseries cardtitle}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a7e3898dd85e2b56defc3389de8aa4091}\label{class_g_u_i_a7e3898dd85e2b56defc3389de8aa4091}} 
+sf\+::\+Text {\bfseries cardsubtitle}
+\item 
+\mbox{\Hypertarget{class_g_u_i_ac6657c74cd8821cc4f2c93da1176ef7f}\label{class_g_u_i_ac6657c74cd8821cc4f2c93da1176ef7f}} 
+\mbox{\hyperlink{class_controls}{Controls}} \& {\bfseries controls} = \mbox{\hyperlink{class_controls_a7597511a1fcda9d5289dfdc304162623}{Controls\+::get\+Instance}}()
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_controls}{Controls}} instance for ensuring our \mbox{\hyperlink{class_g_u_i}{GUI}} matches what the user requests. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a0fc0fbc5f20bb2e94c6959845bc7d9e5}\label{class_g_u_i_a0fc0fbc5f20bb2e94c6959845bc7d9e5}} 
+\mbox{\hyperlink{class_song}{Song}} {\bfseries currsong}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_song}{Song}} instance representing the current playing song. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_ac635c2dfbc0d04e49ff8196ee8891413}\label{class_g_u_i_ac635c2dfbc0d04e49ff8196ee8891413}} 
+sf\+::\+Clock {\bfseries vistimer}
+\begin{DoxyCompactList}\small\item\em Timer instances for the timing of events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_aa830b4262f7a468965ccdcd64b734c40}\label{class_g_u_i_aa830b4262f7a468965ccdcd64b734c40}} 
+sf\+::\+Clock {\bfseries nexttimer}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a884365f2f7790e883e7a1f2a9f74b0cb}\label{class_g_u_i_a884365f2f7790e883e7a1f2a9f74b0cb}} 
+sf\+::\+Clock {\bfseries prevtimer}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a62aa9e522a84ac5dcfce2f62708fadd6}\label{class_g_u_i_a62aa9e522a84ac5dcfce2f62708fadd6}} 
+sf\+::\+Clock {\bfseries quecardtimer}
+\item 
+\mbox{\Hypertarget{class_g_u_i_a2bb2cbbbd97462407e955f47b62384b8}\label{class_g_u_i_a2bb2cbbbd97462407e955f47b62384b8}} 
+int {\bfseries pausecounter} = 0
+\begin{DoxyCompactList}\small\item\em Value to manage the display of a pause event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_af6b232482cd8c799f1a206947d9dbec8}\label{class_g_u_i_af6b232482cd8c799f1a206947d9dbec8}} 
+int {\bfseries resumecounter} = 0
+\begin{DoxyCompactList}\small\item\em Value to manage the display of a resume event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_ae31caa0021240ffe4d41beb83f0b184b}\label{class_g_u_i_ae31caa0021240ffe4d41beb83f0b184b}} 
+int {\bfseries nextcounter} = 0
+\begin{DoxyCompactList}\small\item\em Value to manage the display of skipping to the next song. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_ae2c9fe1d0de8e29baddee20cf43b469e}\label{class_g_u_i_ae2c9fe1d0de8e29baddee20cf43b469e}} 
+int {\bfseries prevcounter} = 0
+\begin{DoxyCompactList}\small\item\em Value to manage the display of going to the previous song. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_a6c1f800136b680fecbb01927d8d65e24}\label{class_g_u_i_a6c1f800136b680fecbb01927d8d65e24}} 
+int {\bfseries cardcounter} = 0
+\begin{DoxyCompactList}\small\item\em Value to manage the duration of tapped card displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Visual \mbox{\hyperlink{class_g_u_i}{GUI}} built using SFML. 
+
+This header provides a SFML \mbox{\hyperlink{class_g_u_i}{GUI}} class, which displays info about the player. \begin{DoxyAuthor}{Author}
+Armin Farhang-\/\+Pour 
+
+Brandon Luu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_g_u_i_a4ba9064e3c25e144b9dd5d10585d3859}\label{class_g_u_i_a4ba9064e3c25e144b9dd5d10585d3859}} 
+\index{GUI@{GUI}!GUI@{GUI}}
+\index{GUI@{GUI}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{GUI()}{GUI()}}
+{\footnotesize\ttfamily GUI\+::\+GUI (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const std\+::string \&}]{title,  }\item[{const std\+::string \&}]{style }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_g_u_i}{GUI}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the window. \\
+\hline
+{\em height} & The height of the window. \\
+\hline
+{\em title} & The title of the window. \\
+\hline
+{\em style} & The style of the window, mainly fullscreen or window. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_g_u_i_ae8b2fcd1ea7ab5f2cd994a1b65059d64}\label{class_g_u_i_ae8b2fcd1ea7ab5f2cd994a1b65059d64}} 
+\index{GUI@{GUI}!changeElement@{changeElement}}
+\index{changeElement@{changeElement}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{changeElement()}{changeElement()}}
+{\footnotesize\ttfamily void GUI\+::change\+Element (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{background,  }\item[{sf\+::\+Texture \&}]{texture,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Method to change an element in the \mbox{\hyperlink{class_g_u_i}{GUI}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em background} & A pointer to the background of the \mbox{\hyperlink{class_g_u_i}{GUI}}. \\
+\hline
+{\em texture} & A pointer to the current texture. \\
+\hline
+{\em filename} & A file linking to the texture image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_a1cedb1ce1a9fdf1b4fa3ac5cae2ced5f}\label{class_g_u_i_a1cedb1ce1a9fdf1b4fa3ac5cae2ced5f}} 
+\index{GUI@{GUI}!flashCard@{flashCard}}
+\index{flashCard@{flashCard}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{flashCard()}{flashCard()}}
+{\footnotesize\ttfamily void GUI\+::flash\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_song}{Song}}}]{song,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Method to show the card that was tapped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song} & The song object. \\
+\hline
+{\em type} & The type of card (track, album, playlist) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_abd799936cf302441ead0fd9bade306be}\label{class_g_u_i_abd799936cf302441ead0fd9bade306be}} 
+\index{GUI@{GUI}!setCurrentSong@{setCurrentSong}}
+\index{setCurrentSong@{setCurrentSong}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setCurrentSong()}{setCurrentSong()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void GUI\+::set\+Current\+Song (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_song}{Song}}}]{newsong }\end{DoxyParamCaption})}
+
+
+
+Method to set the current song given a \mbox{\hyperlink{class_song}{Song}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newsong} & The song to set as currently playing. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_ab1423229acd8493978dac79bda1ba9ab}\label{class_g_u_i_ab1423229acd8493978dac79bda1ba9ab}} 
+\index{GUI@{GUI}!setCurrentSong@{setCurrentSong}}
+\index{setCurrentSong@{setCurrentSong}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setCurrentSong()}{setCurrentSong()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void GUI\+::set\+Current\+Song (\begin{DoxyParamCaption}\item[{std\+::string}]{newartist,  }\item[{std\+::string}]{newsong,  }\item[{std\+::string}]{newalbum,  }\item[{std\+::string}]{coverlink }\end{DoxyParamCaption})}
+
+
+
+Method to set the current song given a list of attributes for drawing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newartist} & The artist of the new song. \\
+\hline
+{\em newsong} & The new song\textquotesingle{}s title. \\
+\hline
+{\em newalbum} & The new song\textquotesingle{}s associated album title. \\
+\hline
+{\em coverlink} & A link to the new song\textquotesingle{}s cover art. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_a659488f37d58f096d82affaf10f00a14}\label{class_g_u_i_a659488f37d58f096d82affaf10f00a14}} 
+\index{GUI@{GUI}!setEmpty@{setEmpty}}
+\index{setEmpty@{setEmpty}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setEmpty()}{setEmpty()}}
+{\footnotesize\ttfamily void GUI\+::set\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to set the window to empty (i.\+e. 
+
+no song playing). \mbox{\Hypertarget{class_g_u_i_ad0f07a40eca6767623983b41a58ed00b}\label{class_g_u_i_ad0f07a40eca6767623983b41a58ed00b}} 
+\index{GUI@{GUI}!setNext@{setNext}}
+\index{setNext@{setNext}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setNext()}{setNext()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void GUI\+::set\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_song}{Song}}}]{song,  }\item[{int}]{numnext }\end{DoxyParamCaption})}
+
+
+
+Method to insert a song in the GUIs upcoming songs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song} & The song instance to insert. \\
+\hline
+{\em numnext} & The index of the desired song. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_ab8493bb3db44af17109c5a93fe26ce1e}\label{class_g_u_i_ab8493bb3db44af17109c5a93fe26ce1e}} 
+\index{GUI@{GUI}!setNext@{setNext}}
+\index{setNext@{setNext}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setNext()}{setNext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void GUI\+::set\+Next (\begin{DoxyParamCaption}\item[{std\+::string}]{newartist,  }\item[{std\+::string}]{newsong,  }\item[{std\+::string}]{username,  }\item[{int}]{numnext }\end{DoxyParamCaption})}
+
+
+
+Method to set the next upcoming song to be played given a list of attributes. 
+
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em newartist} & The artist of the next song. \\
+\hline
+{\em newsong} & The next song\textquotesingle{}s title. \\
+\hline
+{\em username} & The user who queued this song. \\
+\hline
+{\em numnext} & The index number for the song. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_ababac8ba8567962a32da7a829a58d7c0}\label{class_g_u_i_ababac8ba8567962a32da7a829a58d7c0}} 
+\index{GUI@{GUI}!setNextFour@{setNextFour}}
+\index{setNextFour@{setNextFour}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setNextFour()}{setNextFour()}}
+{\footnotesize\ttfamily void GUI\+::set\+Next\+Four (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_song}{Song}} $>$}]{next4,  }\item[{int}]{queuesize }\end{DoxyParamCaption})}
+
+
+
+Method to set the next 4 upcoming songs to be played. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next4} & A containing the next 4 songs to be played. \\
+\hline
+{\em queuesize} & The amount of songs remaining in the queue. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI.\+h\item 
+GUI.\+cpp\end{DoxyCompactItemize}
