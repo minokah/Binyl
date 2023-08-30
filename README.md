@@ -22,6 +22,11 @@ Vinyls digitized for Raspberry Pi.
 * Display content on a physical 128x64 OLED graphic display (ssd1306)
 * Users can add their own personalized data (like a chosen name) onto the card
 
+### Early Demo Video
+It's from one month in of development and the only video I have :(
+
+https://github.com/minokah/Binyl/assets/42823200/8e2a0603-61f4-44c5-87d9-4bae3b013f99
+
 ## Usage
 
 ### Dependencies
